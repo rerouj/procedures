@@ -6,15 +6,15 @@ Bienvenu! Cette page contient un travail experimental consacré à la numérisat
 
 # Usage :
 
-Le projet ne nécessite aucune infrastructure particulière pour être testé : il a été développé en JS et PHP pur. Pour faire fonctionner une version de ce travail il suffit 
+Le projet ne nécessite aucune infrastructure particulière pour être testé : il a été développé en JS et PHP pur. Pour faire fonctionner une version de ce travail il faut :
 
-  1) de cloner le dossier github, 
-  2) de le placer dans un dossier server 
-  3) de lancer la home page depuis une adresse local.
+  1) cloner le dossier github, 
+  2) le placer dans un dossier server 
+  3) lancer la home page depuis une adresse local.
 
 # A propos du code :
 
-Ce travail a été réalisé en php mais une version statique en javascript est aussi disponible. Un tel travail mériterait un développement plus approfondi avec une technologie comme React.js (client side rendering) ou Angular.js en combinaison avec PHP (server side rendering). Il serait aussi tout à fait réalisable avec un framework comme Next.js ou même Meteor.js pour une version prototype.
+Ce travail a été réalisé en php et XML mais une version statique en javascript est aussi disponible. Un tel travail mériterait un développement plus approfondi avec une technologie comme React.js (client side rendering) ou Angular.js en combinaison avec PHP (server side rendering) et un format de données alternatif comme le JSON pour l'accès à des ressources via une API. Il serait aussi tout à fait réalisable avec un framework comme Next.js ou même Meteor.js pour une version prototype.
 
 # Context :
 
