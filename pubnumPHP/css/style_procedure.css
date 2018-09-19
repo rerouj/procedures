@@ -1,0 +1,212 @@
+html{
+    height: 100%;
+    background: radial-gradient( rgb(104, 104, 110), rgb(75, 75, 75), rgb(36, 36, 37));
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: 15px;
+    margin: 0px;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 12px;
+    color: #eee;
+}
+
+#next_box{
+    margin-left: 172px;
+    margin-top: 5px;
+    height: 60px;
+    width: 232px;
+}
+#pic{
+    margin: 0px;
+    padding: 0px;
+}
+#form{
+    width: 400px;
+    margin: auto;
+    vertical-align: middle;
+}
+.pic_pt_alarme{
+    width: 400px;
+    margin: 0px;
+}
+
+p.content{
+    height: 70px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 22pt;
+    color: white;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 25px rgb(197, 197, 197);
+}
+
+p.main_content{
+    text-align: justify;
+    min-height: 55px;
+    width: 400px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 22pt;
+    color: white;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 25px rgb(197, 197, 197);
+}
+
+#header{
+    position: relative;
+}
+
+#data{
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 10px rgb(197, 197, 197);
+    color: white;
+    text-align: justify;
+    vertical-align: middle;
+    position: absolute;
+    height: 140px;
+    width: 208px;
+    z-index: 1;
+    left: 162px;
+    top: 15px;
+    padding: 10px;
+}
+
+/*
+css des boutons images
+*/
+
+#pic_but{
+    width: 250px;
+    opacity: 1;
+    animation-name: image;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#vignette{
+    width:55px; 
+    float:left; 
+    margin-right:10px;
+    animation-name: image_pulse;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#next_content{
+    padding-top: 10px;
+    float: left;
+    border: 1px solid white;
+    height: 38px;
+    width: 170px;
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 18px;
+    text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 10px rgb(197, 197, 197);
+    color: white;
+   
+}
+#next{
+    width:50px; 
+}
+
+/*
+animation
+*/
+
+@keyframes image {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+@keyframes image_pulse {
+    from {opacity: 0.3;}
+    to {opacity: 0.9;}
+}
+
+/*
+page de configuration
+*/
+#container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#box{
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.titre{
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.form_titre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.conf_input{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    width: 200px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+input.conf_input:focus, textarea:focus {
+    outline: none;
+    caret-color: white;
+    background-color: rgba(255, 255, 255, 0)
+    }
+input.conf_input[type=submit]:focus, input.conf_input[type=reset]:focus {
+    outline: none;
+    caret-color: white;
+    background-color: rgba(255, 255, 255, 0)
+   }
+
+.form_button {
+
+    background: rgba(255, 255, 255, 0);
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    /*box-shadow: 5px 5px 5px #eee;*/
+    text-shadow:none;
+    
+    }
+    
+.form_button:hover {
+    
+    background: rgb(173, 173, 173);
+    height: 30px;
+    width: 100px;
+    color: black;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    /*box-shadow: 5px 5px 5px #eee;*/
+    text-shadow:none;
+    
+    }
+#sel_menu{
+    margin-bottom: 20px;
+}
