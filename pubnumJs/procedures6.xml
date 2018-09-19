@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE procedures [
+ <!ELEMENT procedures (data_set+, sites+)>
+ <!ELEMENT data_set (nom_institut?, geoloc?,numeros_urg?,num_institut?,mail?)>
+ <!ELEMENT nom_institut (#PCDATA)>
+ <!ELEMENT geoloc (coord?,adresse)>
+ <!ELEMENT coord (lat, long)>
+ <!ELEMENT adresse (#PCDATA)>
+ <!ELEMENT lat EMPTY>
+  <!ATTLIST lat latitude CDATA "">
+ <!ELEMENT long EMPTY>
+  <!ATTLIST long longitude CDATA "">
+ <!ELEMENT numeros_urg (num*)>
+ <!ELEMENT num EMPTY>
+  <!ATTLIST num cible CDATA "" tel CDATA "">
+ <!ELEMENT mail EMPTY>
+  <!ATTLIST mail cible CDATA "" to CDATA "">
+
+ <!ELEMENT sites (site+)>
+ <!ELEMENT site (situations+)>
+  <!ATTLIST site lieu CDATA "" >
+ <!ELEMENT situations (situation*)>
+ <!ELEMENT sitution (procedure?)>
+  <!ATTLIST situation type CDATA "">
+ <!ELEMENT procedure (etape)> 
+  <!ATTLIST procedure nom CDATA "" actif (oui|non) #IMPLIED de CDATA "" a CDATA "">
+ <!ELEMENT etape (sous_etape)*>
+  <!ATTLIST etape num CDATA "" label CDATA "">
+ <!ELEMENT sous_etape (#PCDATA)>
+  <!ATTLIST sous_etape num CDATA "">
+]>
+
+<procedures>
+  <data_set>
+  </data_set>
+  <sites>
+    <site lieu="route">
+      <situation type="accident">
+	<procedure nom="accident de la circulation" actif="oui" >
+	  <etape num="1" label="Appréciez la situation">
+	    <sous_etape num="1">
+	      Arrêtez-vous.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Gardez votre calme; enclenchez les feux de détresse et les feux de croisement.
+	    </sous_etape>
+	    <sous_etape num="3">
+	      Faites le point quant au nombre, au type et à l'emplacement des véhicules impliqués dans l'accident.
+	    </sous_etape>
+	    <sous_etape num="4">
+	      Y a-t-il des blessés?
+	    </sous_etape>
+	    <sous_etape num="5">
+	      Y a-t-il un risque d'incendie ou d'explosion? Des véhicules transportaient-ils un chargement dangereux?
+	    </sous_etape>
+	  </etape>
+	  <etape num="2" label="Sécurisez le lieu de l'accident">
+	    <sous_etape num="1">
+	      Placez le triangle de panne à 50 mètres au moins, sur les routes à grand trafic à 100 mètres au moins, en amont du lieu de l'accident.
+	    </sous_etape>
+	  </etape>
+	  <etape num="3" label="Donnez les premiers soins">
+	    <sous_etape num="1">
+	      Evacuez immédiatement les blessés de la zone dangereuse (trafic, risque que les véhicules prennent feu).
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Donnez les premiers soins; prenez éventuellement la pharmacie de secours de votre véhicule.
+	    </sous_etape>
+	  </etape>
+	  <etape num="4" label="Alertez les services de secours">
+	    <sous_etape num="1">
+	      Appelez la police au 117, l'ambulance au 144 ou, en cas d'incendie, les pompiers au 118.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Sur les lieux de l’accident, vous ne devez pas modifier l’état des choses avant l’arrivée de la police, à moins que la protection de blessés ou la sécurité du trafic ne l’exige. Photographiez si possible l'état initial des lieux de l’accident.
+	    </sous_etape>
+	  </etape>
+	  <etape num="5" label="Occupez-vous des blessés"> 
+	    <sous_etape num="1">
+	      Occupez-vous des blessés, observez-les, parlez-leur.
+	    </sous_etape>
+	  </etape>
+	</procedure>
+      </situation>
+    </site>
+    <site lieu="autoroute">
+      <situation type="accident">
+	<procedure>
+	  <etape num="1" label="Immobiliser le véhicule">
+	    <sous_etape num="1">
+	      Arrêtez-vous dès que possible sur la bande d'arrêt d'urgence.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Enclenchez les feux de détresse.
+	    </sous_etape>
+	  </etape>
+	  <etape num="2" label="Appelez les secours">
+	    <sous_etape num="1">
+	      Alertez la police (tél. 117) et indiquez votre emplacement exact (numéro de l’autoroute, direction, kilomètre, dernière entrée ou sortie).
+	    </sous_etape>
+	  </etape>
+	  <etape num="3" label="Appréciez la siutation">
+	    <sous_etape num="1">
+	      Prenez garde à la circulation lorsque vous quittez votre véhicule.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Mettez-vous en sécurité hors de la chaussée.
+	    </sous_etape>
+	    <sous_etape num="3">
+	      Appréciez la situation.
+	    </sous_etape>
+	  </etape>
+	  <etape num="4" label="sécurisez le lieu de l'accident">
+	    <sous_etape num="1">
+	      Remontez la bande d'arrêt d'urgence en brandissant le triangle de panne.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Sécurisez le lieu de l'accident en plaçant le triangle de panne.
+	    </sous_etape>
+	    <sous_etape num="3">
+	      Sur les autoroutes, le triangle de panne doit être placé au moins à 100 mètres du lieu de l'accident.
+	    </sous_etape>
+	  </etape>
+	  <etape num="5" label="Occupez-vous des blessés">
+	    <sous_etape num="1">
+	      Transportez les blessés qui peuvent l‘être hors de la zone dangereuse.
+	    </sous_etape>
+	    <sous_etape num="2">
+	      Ne vous mettez pas inutilement en danger.
+	    </sous_etape>
+	    <sous_etape num="3">
+	      Dispensez les premiers soins et occupez-vous des blessés.
+	    </sous_etape>
+	    <sous_etape num="4">
+	      Ne pénétrez plus sur la chaussée.
+	    </sous_etape>
+	  </etape>
+	</procedure>
+      </situation>
+    </site>
+    <site lieu="administration">
+      <situation type="feu">
+	<procedure>
+	  <etape num="1" label="Appelez le 0-118" mode="appel">
+	  </etape>
+	  <etape num="2" label="Sortir les personnes (y.c. le public)" mode="text">
+	  </etape>
+	  <etape num="3" label="Fermez les portes et les fenêtres" mode="text">
+	  </etape>
+	  <etape num="4" label="Combattre le feu (extincteur + poste incendie)" mode="text">
+	  </etape>
+	  <etape num="5" label="Guidez et renseignez les pompiers dès leur arrivée" mode="text">
+	  </etape>
+	</procedure>
+      </situation>
+    </site>
+    <site lieu="ecole">
+      <situation type="feu">
+	<procedure>
+	  <etape num="1" label="Appelez le 118 : QUI - QUOI - OU + avisez vos collègues" mode="appel">
+	    <sous_etape num="1" label="Un mail a été envoyé aux secours"></sous_etape>
+	  </etape>
+	  <etape num="2" label="Sortez les enfants" mode="text"></etape>
+	  <etape num="3" label="Fermez les portes et les fenêtres" mode="text"></etape>
+	  <etape num="4" label="Combattre le feu (extincteur + poste incendie)" mode="text"></etape>
+	  <etape num="5" label="Guidez et renseignez les pompiers dès leur arrivée" mode="text"></etape>
+    </procedure>
+       </situation>
+      </site>
+      <site lieu="hopital-ems">
+            <situation type="feu">
+      	<procedure>
+      		<etape num="1" label="Bouton poussoir, Appelez le 118 : QUI - OU - QUOI + avisez vos collègues" mode="appel">
+      			<sous_etape num="1" label="Un mail a été envoyé aux secours"></sous_etape>
+      		</etape>      		
+      		<etape num="2" label="Transférez les patients dans un autre compartiment ou à l’extérieur" mode="text"></etape>
+      		<etape num="3" label="Fermez les portes et les fenêtres" mode="text"></etape>
+      		<etape num="4" label="Combattez le feu (extincteur + poste incendie)" mode="text"></etape>
+      		<etape num="5" label="Guidez et renseignez les pompiers dès leur arrivée" mode="text"></etape>
+      	</procedure>
+       </situation>
+      </site>
+			      <site lieu="camping">
+            <situation type="feu">
+      	<procedure>
+      		<etape num="1" label="APPELEZ LE 118 AVISER LES VOISINS ET LE CHEF DE CAMP" mode="appel">
+      			<sous_etape num="1" label="Un mail a été envoyé aux secours"></sous_etape>
+      		</etape>      		
+      		<etape num="2" label="SAUVEZ LES PERSONNES" mode="text"></etape>
+      		<etape num="3" label="COMBATTEZ LE FEU" mode="text"></etape>
+      		<etape num="4" label="Guidez et renseignez les pompiers dès leur arrivée" mode="text"></etape>
+      	</procedure>
+       </situation>
+      </site>
+      <site lieu="hôtel">
+        <situation type="feu">
+					<procedure>
+						<etape num="1" label="Bouton poussoir, Appelez le 118 : QUI - OU - QUOI + avisez vos collègues" mode="appel">
+							<sous_etape num="1" label="Un mail a été envoyé aux secours"></sous_etape>
+						</etape>      		
+						<etape num="2" label="Diriger les clients Vers les issues de secours" mode="text"></etape>
+						<etape num="3" label="Fermez les portes et les fenêtres" mode="text"></etape>
+						<etape num="4" label="Combattez le feu (extincteur + poste incendie)" mode="text"></etape>
+						<etape num="5" label="Guidez et renseignez les pompiers dès leur arrivée" mode="text"></etape>
+					</procedure>
+				</situation>
+       <situation type="fumée">
+      	<procedure>
+      		<etape num="1" label="Restez dans la chambre Prévenez la réception" mode="appel">
+      			<sous_etape num="1" label="Un mail a été envoyé aux secours"></sous_etape>
+      		</etape>      		
+      		<etape num="2" label="Obstruez les joints de la porte avec des linges humides" mode="text"></etape>
+      		<etape num="3" label="Arrosez votre porte si elle chauffe" mode="text"></etape>
+      		<etape num="4" label="Manifestez votre présence à la fenêtre sans l’ouvrir" mode="text"></etape>
+      	</procedure>
+       </situation>
+      </site>
+
+
+  </sites>
+</procedures>
