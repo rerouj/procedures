@@ -16,6 +16,6 @@ Ce travail a été réalisé en php mais une version statique en javascript est 
 
 # Context :
 
-Ce travail a été réalisé dans le context du cours "publication numérique" offert à l'Université de Lausanne par Isaac Pante.
+Ce travail a été réalisé dans le cadre du cours "publication numérique" offert à l'Université de Lausanne par Isaac Pante.
 
 Renato Diaz (renato.diaz@unil.ch)
